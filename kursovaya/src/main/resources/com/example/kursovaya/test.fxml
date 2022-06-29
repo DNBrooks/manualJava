@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="477.0" prefWidth="610.0" style="-fx-background-color: green;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kursovaya.TestController">
+    <children>
+        <AnchorPane layoutX="-1.0" layoutY="96.0" prefHeight="380.0" prefWidth="610.0" style="-fx-background-color: white;">
+            <children>
+                <Button fx:id="next_id" layoutX="386.0" layoutY="306.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="116.0" text="Далее">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Button>
+            <Text fx:id="question_text" layoutX="8.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Что такое адресация?" wrappingWidth="593.13671875">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Button fx:id="stop_id" layoutX="109.0" layoutY="306.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="116.0" text="Завершить">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <RadioButton fx:id="radio1" layoutX="66.0" layoutY="108.0" mnemonicParsing="false" text="название данное листу Excel">
+               <toggleGroup>
+                  <ToggleGroup fx:id="answers" />
+               </toggleGroup>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="radio2" layoutX="66.0" layoutY="145.0" mnemonicParsing="false" text="адрес компьютера, на котором создан документ" toggleGroup="$answers">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="radio3" layoutX="66.0" layoutY="182.0" mnemonicParsing="false" text="указание куда поместить результат" toggleGroup="$answers">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="radio4" layoutX="66.0" layoutY="224.0" mnemonicParsing="false" text="указание на данные находящиеся в определенной ячейке" toggleGroup="$answers">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </RadioButton>
+            </children>
+        </AnchorPane>
+        <Text fill="WHITE" layoutX="5.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Электронное учебное пособие по дисциплине &quot;Технология разработки и защиты баз данных&quot; на тему: &quot;Способы адрессации и методы доступа к записям&quot;" textAlignment="CENTER" wrappingWidth="600.708984375">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Text>
+    </children>
+</AnchorPane>
